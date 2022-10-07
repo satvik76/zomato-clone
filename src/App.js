@@ -1,10 +1,16 @@
 import "./App.css";
-import { IoIosArrowBack, IoIosArrowDropright, IoIosArrowForward, IoMdArrowForward } from "react-icons/io";
+import {
+  IoIosArrowBack,
+  IoIosArrowDropright,
+  IoIosArrowForward,
+  IoMdArrowForward,
+} from "react-icons/io";
 import { BiArrowToRight, BiBell } from "react-icons/bi";
-import { BsCreditCard } from "react-icons/bs";
+import { BsChatRightText, BsCreditCard, BsFillChatRightTextFill } from "react-icons/bs";
 import profilePicture from "./dp.png";
 import { AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
+import { HiOutlineTicket, HiOutlineChatAlt } from "react-icons/hi";
 
 function App() {
   return (
@@ -47,8 +53,30 @@ function App() {
         <div className="rating-container w-[90%] h-[40px] rounded-lg flex flex-row px-3 py-2 gap-3 items-center bg-[#FFF]">
           <AiOutlineStar className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
           <p className="text-[9px] pt-[1px]">Your rating</p>
-          <p className="bg-gray-100 flex flex-row px-2 py-1 ml-24 text-[7px] rounded-md">4.77 &nbsp;⭐️</p>
+          <p className="bg-gray-100 flex flex-row px-2 py-1 ml-24 text-[7px] rounded-md font-bold">
+            4.77 &nbsp;⭐️
+          </p>
           <IoIosArrowForward className="text-xs" />
+        </div>
+        <div className="zomaland-container w-[90%] min-h-[40px] rounded-lg flex flex-col bg-white py-2 gap-2">
+          <div className="title flex flex-row gap-2">
+            <div className="bar w-[2px] h-[14px] bg-red-500 rounded-r-full"></div>
+            <div className="text text-[10px] tbold">Zomaland</div>
+          </div>
+          <div className="options px-2 flex flex-col gap-3">
+            <div className="option flex flex-row items-center gap-2">
+              <div className="icon">
+                <HiOutlineTicket className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
+              </div>
+              <div className="text text-[10px]">Your tickets</div>
+            </div>
+            <div className="option flex flex-row items-center gap-2">
+              <div className="icon">
+                <HiOutlineChatAlt className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
+              </div>
+              <div className="text text-[10px]">Zomaland help</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
