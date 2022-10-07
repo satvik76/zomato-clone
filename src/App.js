@@ -121,6 +121,26 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="grocery-container w-[90%] h-fit rounded-lg flex flex-col bg-white py-2 gap-2">
+          <div className="title flex flex-row gap-2">
+            <div className="bar w-[2px] h-[14px] bg-red-500 rounded-r-full"></div>
+            <div className="text text-[10px] tbold">Grocery Orders</div>
+          </div>
+          <div className="options px-2 flex flex-col gap-3">
+            <div className="option flex flex-row items-center gap-2">
+              <div className="icon">
+                <HiOutlineFolderOpen className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
+              </div>
+              <div className="text text-[10px]">Your orders</div>
+            </div>
+            <div className="option flex flex-row items-center gap-2">
+              <div className="icon">
+                <HiOutlineChatAlt className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
+              </div>
+              <div className="text text-[10px]">Grocery ordering help</div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
