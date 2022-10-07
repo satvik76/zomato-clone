@@ -1,6 +1,6 @@
 import "./App.css";
-import { IoIosArrowBack } from "react-icons/io";
-import { BiBell } from "react-icons/bi";
+import { IoIosArrowBack, IoIosArrowDropright, IoIosArrowForward, IoMdArrowForward } from "react-icons/io";
+import { BiArrowToRight, BiBell } from "react-icons/bi";
 import { BsCreditCard } from "react-icons/bs";
 import profilePicture from "./dp.png";
 import { AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
@@ -31,22 +31,24 @@ function App() {
           </div>
         </div>
         <div className="likes-section bg flex flex-row gap-3">
-          <div className="like-box w-[80px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
+          <div className="like-box w-[87px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
             <AiOutlineHeart className="m-0" />
             <p>Likes</p>
           </div>
-          <div className="like-box w-[80px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
+          <div className="like-box w-[87px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
             <BsCreditCard className="m-0" />
             <p>Likes</p>
           </div>
-          <div className="like-box w-[80px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
+          <div className="like-box w-[87px] h-[50px] rounded-md bg-white flex flex-col items-center justify-center gap-2">
             <FiSettings className="m-0" />
             <p>Likes</p>
           </div>
         </div>
-        <div className="user-badge-container w-[90%] h-[40px] rounded-lg flex flex-row px-3 py-2 gap-3 items-center bg-[#FFF]">
+        <div className="rating-container w-[90%] h-[40px] rounded-lg flex flex-row px-3 py-2 gap-3 items-center bg-[#FFF]">
           <AiOutlineStar className="text-[20px] bg-gray-100 p-[5px] rounded-full" />
-          <p className="text-[9px]">Your rating</p>
+          <p className="text-[9px] pt-[1px]">Your rating</p>
+          <p className="bg-gray-100 flex flex-row px-2 py-1 ml-24 text-[7px] rounded-md">4.77 &nbsp;⭐️</p>
+          <IoIosArrowForward className="text-xs" />
         </div>
       </div>
     </div>
