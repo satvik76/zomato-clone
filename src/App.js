@@ -141,7 +141,9 @@ function App() {
             </div>
           </div>
         </div>
-
+        <div className="zomato-logo">
+          Zomato
+        </div>
       </div>
     </div>
   );
